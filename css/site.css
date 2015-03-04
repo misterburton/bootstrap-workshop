@@ -1,0 +1,388 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+
+/* ***************************** */
+/* ***** BOILERPLATE STUFF ***** */
+/* ***************************** */
+
+body {
+  /* 'better helvetica' trick from CSS Tricks*/
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  color: #666;
+  font-size: 16px;
+} 
+
+/* remove underline on links */
+a, a:hover, a:active { text-decoration: none; }
+
+/* give paragraph text some vertical breakthing room */
+p { line-height: 140%; }
+
+img {
+  max-width: 100%; /* ensure that images are never larger than their container divs */
+  height: auto; /* maintain images' aspect ratio as they scale */
+}
+
+*:focus { outline: none; }
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* [optional] CSS hackery to make things more app-like */
+* {
+  -webkit-touch-callout: none;              /* prevent callout to copy image, etc when tap to hold */
+  -moz-touch-callout: none;
+  touch-callout: none;
+  -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+  -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+  -moz-tap-highlight-color: rgba(0,0,0,0);
+  tap-highlight-color: rgba(0,0,0,0);
+  /*-moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;  */               /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+/* ************************************** */
+/* ***** CLASSES FOR BOOTSTRAP DEMO ***** */
+/* ************************************** */
+
+.red {
+  background-color: red;
+  color: #FFF;
+  padding: 10px;
+}
+
+.green {
+  background-color: green;
+  color: #FFF;
+  padding: 10px;
+}
+
+.blue {
+  background-color: blue;
+  color: #FFF;
+  padding: 10px;
+}
+
+/* ****************** */
+/* ***** HEADER ***** */
+/* ****************** */
+
+header {
+  background-color: #371900;
+  border-bottom: 2px solid #914200;
+  height: 170px;
+  background-image: url(../img/thLogoRefresh.svg);
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  -webkit-background-size: 49% 49%;
+  background-size: 49% 49%;
+  text-align: center;
+  color: #FFF;
+  font-size: 28px;
+}
+
+header span {
+  top: 116px;
+  margin-left: -40px;
+  position: absolute;
+  color: #ea6400;
+  font-family: 'Amatic SC', cursive;
+}
+
+/* *********************** */
+/* ***** DESKTOP NAV ***** */
+/* ********************** */
+
+ul {
+  list-style: none;
+}
+
+#desktopNavWrapper {
+  padding: 0;
+  text-align: center;
+  background-image: url(../img/navBack.jpg);
+  height: 54px;
+  border-bottom: 4px solid #80962f;
+  margin-bottom: 6px;
+  display: none; /* do not display desktop on mobile */
+}
+
+#desktopNav {
+  padding-top: 15px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#desktopNav li {
+  display: inline;
+  padding-right: 15px;
+  color: #b7d643;
+}
+
+#desktopNav li a {
+  text-decoration: none;
+  color: #cbe07e;
+  -webkit-transition: color .5s ease-out;
+     -moz-transition: color .5s ease-out;
+      -ms-transition: color .5s ease-out;
+       -o-transition: color .5s ease-out;
+          transition: color .5s ease-out;
+}
+
+#desktopNav li a:hover, #desktopNav li a:active {
+  color: #FFF;
+}
+
+/* ********************** */
+/* ***** MOBILE NAV ***** */
+/* ********************** */
+
+.menui {
+  background-color: #FFF;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.mobilenav {
+  background: rgba(45, 25, 0, 0.95);
+}
+
+.icon {
+  display: block;
+  position: absolute;
+}
+
+.mobileNavLink {
+  color: #cbe07e;
+}
+
+.mobileNavLink:active {
+  color: #FFF;
+}
+
+/* ***************************** */
+/* ***** MAIN CONTENT AREA ***** */
+/* ***************************** */
+
+#mission h2 {
+  line-height: 140%;
+}
+
+#mission {
+  margin-bottom: 40px;
+}
+
+.thumbnail h3 {
+  margin-top: 6px;
+}
+
+.thumbnail .btn {
+  color: #FFF;
+  background-color: #669900;
+  margin-top: 10px;
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+}
+
+.thumbnail .btn:hover {
+  color: #FFF;
+  background-color: #668800;
+}
+
+/* ******************************** */
+/* ***** BOTTOM THREE BUTTONS ***** */
+/* ******************************** */
+
+#threeButtonsWrapper {
+  background-color: #627120;
+  border-top: 3px solid #80962f;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 70px;
+  background-image: url(../img/navBack.jpg);
+  text-align: center;
+}
+
+#threeButtonsWrapper .btn {
+  color: #FFF;
+  background-color: #74a229;
+  border-color: #80962f;
+  margin-left: 4px;
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+}
+
+#threeButtonsWrapper .btn:hover {
+  background-color: #668f22;
+}
+
+/* **************************** */
+/* ********** FOOTER ********** */
+/* **************************** */
+
+/* footer stuff */
+footer {
+  background-color: #371900;
+  text-align: center;
+  border-top: 2px solid #914200;
+  padding-bottom: 30px;
+}
+
+footer a {
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+}
+
+#socialButtons {
+  padding: 20px;
+}
+
+#socialButtons i {
+  padding-left: 8px;
+}
+
+#socialButtons a {
+  color: #ff7400;
+  font-size: 18px;
+}
+
+#socialButtons a:hover, #socialButtons a:active {
+  color: #FFF;
+}
+
+#bottomThreeLinks {
+  font-size: 14px;
+}
+
+#bottomThreeLinks, #bottomThreeLinks a {
+  color: #af5000;
+}
+
+#bottomThreeLinks a:hover, #bottomThreeLinks a:active {
+  color: #d76200;
+}
+
+.bottomLink {
+  display: inline;
+}
+
+/* ******************************* */
+/* ***** CAROUSEL + FADE FIX ***** */
+/* ******************************* */
+
+#carouselContainer {
+  background-color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 2px solid #80962f;
+}
+
+/* fixing bootstrap's carousel to fade, not slide */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel-caption {
+  text-align: left;
+  right: 0;
+  left: 5%;
+  bottom: 10px;
+}
+
+.carousel-caption .btn-sm {
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* ***************************** */
+/* ***** CSS MEDIA QUERIES ***** */
+/* ***************************** */
+
+/*
+Extra small devices (phones, up to 768px)
+No media query since this is the 'mobile first' default in Bootstrap
+Bootstrap HTML syntax: -xs-
+*/
+
+/* mobile & global CSS goes here */
+
+/*
+Small devices (tablet portrait, 768px and up)
+Bootstrap HTML syntax: -sm-
+*/
+@media (min-width: 768px) {
+  
+  /* show desktop nav at 768px & wider */
+  #desktopNavWrapper {
+    display: block;
+  }
+
+  #carouselContainer {
+    border-top: 0px;
+  }
+
+  /* hide mobile only items at 768px & wider */
+  .icon {
+    display: none;
+  }
+
+}
+
+/*
+Medium devices (tablet landscape & laptop, 992px and up)
+Bootstrap HTML syntax: -md-
+*/
+@media (min-width: 992px) {
+
+  /* CSS for medium devices goes here */
+
+}
+
+/*
+Large devices (desktop & laptop widescreen, 1200px and up)
+Bootstrap HTML syntax: -lg-
+*/
+@media (min-width: 1200px) {
+
+  /* CSS for large devices goes here */
+
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <!-- size content to mobile, prevent user scaling, use mobile safari's minimal UI -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- this meta tag removes the mobile safari chrome from a site added to the home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- set title for iOS homescreen web app -->
+  <meta name="apple-mobile-web-app-title" content="My App">
+
+  <!-- always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <title>Bootstrap Workshop</title>
+
+  <!-- iOS home screen icons / find these in root/img/icons/ & add your artwork in PS/sketch/etc. -->
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-iphone.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-retina.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-ipad.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-ipad-retina.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/hamburgler.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/site.css">
+
+</head>
+
+<body>
+
+  <!-- hamburgler menu --> 
+  <div class="mobilenav"> 
+    <li><a class="mobileNavLink" href="#">About Us</a></li> 
+    <li><a class="mobileNavLink" href="#">Our Programs</a></li> 
+    <li><a class="mobileNavLink" href="#">Adopt</a></li> 
+    <li><a class="mobileNavLink" href="#">Caring for Cats</a></li> 
+    <li><a class="mobileNavLink" href="#">Get Involved</a></li> 
+    <li><a class="mobileNavLink" href="#">Support Us</a></li> 
+  </div><!-- ./hamburgler menu -->
+
+  <!-- hamburgler icon --> 
+  <a href="javascript:void(0)" class="icon"> 
+     <div class="hamburger"> 
+       <div class="menui top-menu"></div> 
+       <div class="menui mid-menu"></div> 
+       <div class="menui bottom-menu"></div> 
+     </div> 
+  </a><!-- hamburgler icon -->
+
+  <!-- header -->
+  <header>
+
+    <!-- search form -->
+    <form id="searchForm">
+      <input type="search">
+    </form>
+
+    <span>tree house shelter</span>
+
+  </header><!-- ./header -->
+
+  <!-- desktop nav wrapper -->
+  <div id="desktopNavWrapper">
+    
+    <!-- desktop nav -->
+    <ul id="desktopNav">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Our Programs</a></li>
+      <li><a href="#">Adopt</a></li>
+      <li><a href="#">Caring for Cats</a></li>
+      <li><a href="#">Get Involved</a></li>
+      <li><a href="#">Support Us</a></li>
+    </ul><!-- ./desktop nav -->
+
+  </div><!-- ./desktop nav wrapper -->
+
+  <!-- carousel container -->
+  <div class="container" id="carouselContainer">
+    
+    <!-- carousel -->
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <!-- item 1 -->
+        <div class="item active">
+          <img src="img/carousel/01.jpg" height="550" width="1170" alt="...">
+          <div class="carousel-caption">
+            <h3>February is Chicago's Spray/Neuter Month</h3>
+            <a class="btn btn-default btn-sm" href="#" role="button">Learn More</a>
+          </div>
+        </div><!-- ./item 1 -->
+
+        <!-- item 2 -->
+        <div class="item">
+          <img src="img/carousel/02.jpg" height="550" width="1170" alt="...">
+          <div class="carousel-caption">
+            <h3>3 Stray Kittens, 3 Degrees, 30&deg; Below Wind Chills</h3>
+            <a class="btn btn-default btn-sm" href="#" role="button">Learn More</a>
+          </div>
+        </div><!-- ./item 2 -->
+
+        <!-- item 3 -->
+        <div class="item">
+          <img src="img/carousel/03.jpg" height="550" width="1170" alt="...">
+          <div class="carousel-caption">
+            <h3>Hawthorne Race Course Cats, What We're Doing to Help</h3>
+            <a class="btn btn-default btn-sm" href="#" role="button">Learn More</a>
+          </div>
+        </div><!-- ./item 2 -->
+
+      </div><!-- ./carousel-inner -->
+
+    </div><!-- ./carousel -->
+
+  </div><!-- ./carousel container -->
+
+  <!-- main content container -->
+  <div class="container">
+
+    <!-- mission -->
+    <div class="row">
+      <div class="col-xs-12" id="mission">
+        <h2>Tree House is a cageless, no kill humane organization specializing in the rescue and rehabilitation of sick and injured stray cats.</h2>
+      </div>
+    </div><!-- ./mission -->
+
+    <!-- three column -->
+    <div class="row">
+
+      <!-- love -->
+      <div class="col-xs-12 col-sm-4">
+        <div class="thumbnail">
+          <img src="http://placekitten.com/g/400/200" alt="">
+          <div class="caption">
+            <h3>Come and Get Your Love</h3>
+            <p>Come and Get Your Love! This Valentine's day weekend (February 13th-15th), visit us for our Love promotion!</p>
+            <p><a href="#" class="btn btn-default" role="button">Learn More</a></p>
+          </div>
+        </div>
+      </div><!-- ./love -->
+      
+      <!-- new shelter -->
+      <div class="col-xs-12 col-sm-4">
+        <div class="thumbnail">
+          <img src="http://placekitten.com/g/400/281" alt="">
+          <div class="caption">
+            <h3>Our New Shelter</h3>
+            <p>We’re planning to design and build a new, state-of-the-art, environmentally friendly Adoption Center and low-cost Veterinary Clinic in Chicago. We have already acquired a site for the project, but we need your support to raise funds for the construction.</p>
+            <p><a href="#" class="btn btn-default" role="button">Learn More</a></p>
+          </div>
+        </div>
+      </div><!-- ./new shelter -->
+
+      <!-- tree house app -->
+      <div class="col-xs-12 col-sm-4">
+        <div class="thumbnail">
+          <img src="http://placekitten.com/g/400/260" alt="">
+          <div class="caption">
+            <h3>Tree House Smartphone App</h3>
+            <p>Tree House introduces PetSpotter, a revolutionary iPhone application that takes advantage of the features of the world's most popular smartphone to help pet guardians report and locate lost pets.</p>
+            <p><a href="#" class="btn btn-default" role="button">Learn More</a></p>
+          </div>
+        </div>
+      </div><!-- ./tree house app -->
+
+    </div><!-- ./three column -->
+    
+  </div><!-- ./main content container -->
+
+  <!-- bottom 3 buttons -->
+  <div id="threeButtonsWrapper">
+    
+    <button type="button" class="btn btn-default">Donate</button>
+    <button type="button" class="btn btn-default">Email Newsletter</button>
+    <button type="button" class="btn btn-default">Share</button>
+
+  </div><!-- ./threeButtonsWrapper -->
+
+  <footer>
+    
+    <div id="socialButtons">
+      <a href="https://www.facebook.com/pages/Tree-House-Humane-Society/141825113026" target="_blank"><i class="fa fa-facebook-square"></i></a>
+      <a href="https://twitter.com/treehousecats" target="_blank"><i class="fa fa-twitter-square"></i></a>
+      <a href="https://vimeo.com/treehousevideos" target="_blank"><i class="fa fa-vimeo-square"></i></a>
+      <a href="https://www.pinterest.com/treehousecats/" target="_blank"><i class="fa fa-pinterest-square"></i></a>
+      <a href="https://instagram.com/treehousecats/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.flickr.com/photos/treehousecats/" target="_blank"><i class="fa fa-flickr"></i></a>
+      <a href="https://www.youtube.com/user/treehousecats" target="_blank"><i class="fa fa-youtube-play"></i></a>
+    </div><!-- ./social buttons -->
+
+    <div id="bottomThreeLinks">
+      <div class="bottomLink"><a href="#">Privacy Policy</a></div> | 
+      <div class="bottomLink"><a href="#">Contact Us</a></div> | 
+      <div class="bottomLink"><a href="#">Login</a></div>
+    </div><!-- ./social buttopns -->
+
+  </footer>
+
+
+  <!-- js placed at the bottom of the page for faster loading -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/fastclick.min.js"></script>
+  <script src="js/hamburgler.js"></script>
+  <script src="js/site.js"></script>
+
+  <!-- LIVERELOAD SCRIPT - KILL FOR LAUNCH -->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+
+</html>
