@@ -57,7 +57,7 @@ In the resulting window, type **'Emmet'**. Choose the resulting _**'Emmet (ex-Ze
 
 ## Download workshop files
 
-(todo)
+[link](https://raw.githubusercontent.com/misterburton/bootstrap-workshop/master/_assets/BootstrapWorkshopFiles.zip)
 
 ## Adding LiveReload to our project
 
