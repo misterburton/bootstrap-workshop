@@ -193,6 +193,8 @@ Bootstrap HTML syntax: -lg-
 
 Bootstrap defaults to a 12-column grid. So, if you can add numbers from 1 to 12, you've only a little syntax to learn & you're already there.
 
+![12 column grid](http://i.imgur.com/h9nDPbQ.png)
+
 Bootstrap affords us a number of CSS utility classes with which to build our site, classes like `.container`, `row` and colums of varying widths, 1-12. (ex. `col-xs-12`)
 
 We first start w/ a `container` div by writing the following:
