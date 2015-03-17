@@ -2,9 +2,12 @@
 
 _**presented with <3 by [@misterburton](https://twitter.com/misterburton)**_
 
-**Overview:** We'll start out with a little workflow & project setup, take a few moments to cover the basics of Bootstrap and then dive into creating a responsive page for Chicago's [Tree House Humane Society](http://www.treehouseanimals.org/).
-
 ***
+_Note: the following workshop was conducted on Tuesday, March 10, 2014. The files in this repository will not be updated as new versions of the software used are released._
+***
+
+
+**Overview:** We'll start out with a little workflow & project setup, take a few moments to cover the basics of Bootstrap and then dive into creating a responsive page for Chicago's [Tree House Humane Society](http://www.treehouseanimals.org/).
 
 ### A couple things:
 
